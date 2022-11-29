@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 0 5px 2px map-get($map: $box-shadows, $key: header);
+    margin-bottom: 4px;
+    .logo {
+        display: block;
+        width: 200px;
+        margin: 15px 10px;
+    }
+}
