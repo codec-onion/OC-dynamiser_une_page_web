@@ -1,11 +1,16 @@
 @import "./utils/variables";
-@import "./utils/mixin";
+@import "./utils/mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
 
 @import "./base/base";
 
+@import "./components/buttons";
+@import "./components/tags";
+
 @import "./layouts/header";
 @import "./layouts/sections";
 @import "./layouts/footer";
+
+@import "./pages/home";
 

@@ -1,0 +1,23 @@
+footer {
+    background: map-get($map: $background-color, $key: footer);
+    padding: 25px 20px;
+    color: $text-color-primary;
+    h2 {
+        font-family: Shrikhand, sans-serif;
+        margin-bottom: 25px;
+        font-size: 1.3rem;
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    a {
+        color: $text-color-primary;
+        font-size: 1.1rem;
+        i {
+            width: 30px;
+        }
+    }
+}
