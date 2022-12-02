@@ -20,4 +20,13 @@ footer {
             width: 30px;
         }
     }
+    @include tablette-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

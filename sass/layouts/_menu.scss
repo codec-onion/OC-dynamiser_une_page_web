@@ -35,6 +35,10 @@
         }
         .meal-part {
             margin-bottom: 40px;
+            @include tablette-display {
+                width: 80%;
+                margin: 0 auto 40px;
+            }
             h2 {
                 text-transform: uppercase;
                 font-weight: lighter;
