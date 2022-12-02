@@ -1,11 +1,12 @@
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 65px;
     box-shadow: 2px 0 5px 2px map-get($map: $box-shadows, $key: header);
     margin-bottom: 4px;
     .logo {
         display: block;
         width: 180px;
-        margin: 15px 10px;
     }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -10,121 +11,125 @@
     <title>OhMyFood</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><i></i></a>
-        <img src="../img/ohmyfood.png" alt="Logo">
+    <header class="menu-header">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../img/ohmyfood.png" alt="Logo" class="logo">
     </header>
 
     
-    <main>
-        <img src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+    <main class="menu-container">
+        <img src="../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="menu-img">
 
         <section class="menu">
-            <h1>Le délice des sens<i></i></h1>
+            <h1>Le délice des sens<i class="fa-regular fa-heart"></i></h1>
 
-            <section class="meal_elements">
+            <section class="meal-part">
                 <h2>Entrées</h2>
+                <div class="meal-part__underline-title"></div>
             
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Tartare de thon</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Assaisonné au yuzu</p>
-                            <p class="meal_element__price">25€</p>
+                            <p class="meal-part__element-price">25€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Bouchée de homard croustillant</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Et sa farandole de petits légumes</p>
-                            <p class="meal_element__price">35€</p>
+                            <p class="meal-part__element-price">35€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Velouté de cèpes</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Aux truffes</p>
-                            <p class="meal_element__price">20€</p>
+                            <p class="meal-part__element-price">20€</p>
                         </div>
                     </a>
                 </article>
             </section>
             
 
-            <section class="meal_elements">
+            <section class="meal-part">
                 <h2>Plats</h2>
+                <div class="meal-part__underline-title"></div>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Poulet rôti aux herbes de Provence</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Et sa crème de truffe</p>
-                            <p class="meal_element__price">40€</p>
+                            <p class="meal-part__element-price">40€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Langouste rôtie</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Et ses légumes de saison</p>
-                            <p class="meal_element__price">35€</p>
+                            <p class="meal-part__element-price">35€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Côte de boeuf Angus</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Et sa purée de panais</p>
-                            <p class="meal_element__price">44€</p>
+                            <p class="meal-part__element-price">44€</p>
                         </div>
                     </a>
                 </article>
             </section>
 
 
-            <section class="meal_elements">
+            <section class="meal-part">
                 <h2>Desserts</h2>
+                <div class="meal-part__underline-title"></div>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Farandole de desserts</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Du chef</p>
-                            <p class="meal_element__price">18€</p>
+                            <p class="meal-part__element-price">18€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Crème brulée</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>Revisitée</p>
-                            <p class="meal_element__price">22€</p>
+                            <p class="meal-part__element-price">22€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="meal_element">
+                <article class="meal-part__element">
                     <a href="#">
                         <h3>Tiramisu</h3>
-                        <div class="meal_element__info">
+                        <div class="meal-part__element-info">
                             <p>À la noisette</p>
-                            <p class="meal_element__price">23€</p>
+                            <p class="meal-part__element-price">23€</p>
                         </div>
                     </a>
                 </article>
             </section>
+            <a href="" class="button-purple">Commander</a>
         </section>
     </main>
 
@@ -132,8 +137,8 @@
     <footer>
         <h2>ohmyfood</h2>
         <ul>
-            <li><a href="#">Proposer un restaurant</a></li>
-            <li><a href="#">Devenir partenaire</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
             <li><a href="#">Mentions légales</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
