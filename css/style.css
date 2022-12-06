@@ -5,6 +5,8 @@
 
 html, body {
   font-family: Roboto, sans-serif;
+  max-width: 1920px;
+  margin: auto;
 }
 
 *, ::before, ::after {
@@ -62,22 +64,27 @@ p {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 65px;
-  box-shadow: 2px 0 5px 2px rgba(128, 128, 128, 0.631372549);
-  margin-bottom: 4px;
+  margin-bottom: 3px;
+}
+header::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0px;
+  box-shadow: 0px 10px 10px -10px #bababa inset;
 }
 header .logo {
   display: block;
   width: 180px;
 }
 
-.menu-header {
-  position: relative;
-  box-shadow: none;
-}
 .menu-header a {
   position: absolute;
   top: 23px;
@@ -90,6 +97,11 @@ header .logo {
   height: 255px;
   object-fit: cover;
   z-index: 0;
+}
+@media screen and (min-width: 992px) {
+  .menu-container .menu-img {
+    height: 400px;
+  }
 }
 .menu-container .menu {
   padding: 40px 12px;
@@ -128,11 +140,22 @@ header .logo {
   background-color: #99E2D0;
   margin: 8px 0 12px 0;
 }
+@media screen and (min-width: 992px) {
+  .menu-container .menu .meal-part__underline-title {
+    width: 40%;
+  }
+}
 .menu-container .menu .meal-part__element {
   margin-bottom: 10px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 2px 10px 3px rgba(211, 211, 211, 0.7333333333);
+}
+@media screen and (min-width: 992px) {
+  .menu-container .menu .meal-part__element {
+    width: 80%;
+    margin: 0 auto 10px;
+  }
 }
 .menu-container .menu .meal-part__element a {
   display: block;
@@ -220,7 +243,7 @@ footer a i {
     width: 100%;
   }
   .functioning__step {
-    width: 30%;
+    width: 32%;
     text-align: left;
   }
 }
@@ -231,6 +254,17 @@ footer a i {
   margin-bottom: 20px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .functioning__step {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .functioning__step {
+    text-align: left;
+  }
+}
 .functioning__step a {
   background: #F7F7F7;
   border-radius: 20px;
@@ -240,6 +274,11 @@ footer a i {
   padding: 30px;
   font-weight: bold;
   box-shadow: 2px 2px 10px 3px rgba(211, 211, 211, 0.7333333333);
+}
+@media screen and (min-width: 992px) {
+  .functioning__step a {
+    padding: 25px;
+  }
 }
 .functioning__step i {
   margin-right: 20px;
@@ -261,18 +300,25 @@ footer a i {
   font-size: 0.9rem;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) {
-  .functioning__step {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-}
 
 .restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F7F7F7;
   padding: 60px 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants h2 {
+    width: 100%;
+  }
+  .restaurants__card {
+    width: 49%;
+  }
 }
 .restaurants h2 {
   margin-bottom: 25px;
@@ -292,6 +338,11 @@ footer a i {
   height: 174px;
   object-fit: cover;
 }
+@media screen and (min-width: 992px) {
+  .restaurants__card img {
+    height: 250px;
+  }
+}
 .restaurants__card-info {
   display: flex;
   justify-content: space-between;
@@ -300,19 +351,6 @@ footer a i {
 }
 .restaurants__card-info i {
   font-size: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurants h2 {
-    width: 100%;
-  }
-  .restaurants__card {
-    width: 49%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

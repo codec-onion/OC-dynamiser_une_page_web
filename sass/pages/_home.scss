@@ -29,7 +29,7 @@
             width: 100%;
         }
         &__step {
-            width: 30%;
+            width: 32%;
             text-align: left;
         }
     }
@@ -37,9 +37,19 @@
         margin-bottom: 25px;
     }
     &__step {
+        @include tablette-display {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        @include desktop-display {
+            text-align: left;
+        }
         margin-bottom: 20px;
         position: relative;
         a {
+            @include desktop-display {
+                padding: 25px;
+            }
             background: map-get($map: $background-color, $key: secondary);
             border-radius: 20px;
             display: block;
@@ -69,14 +79,21 @@
             font-size: .9rem;
             font-weight: bold;
         }
-        @include tablette-display {
-            text-align: center;
-            font-size: 1.2rem;
-        }
     }
 }
 
 .restaurants {
+    @include tablette-display {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h2 {
+            width: 100%;
+        }
+        &__card {
+            width: 49%;
+        }
+    }
     display: flex;
     flex-direction: column;
     background-color: map-get($map: $background-color, $key: secondary);
@@ -97,6 +114,9 @@
             width: 100%;
             height: 174px;
             object-fit: cover;
+            @include desktop-display {
+                height: 250px;
+            }
         }
         &-info {
             display: flex;
@@ -106,17 +126,6 @@
             i {
                 font-size: 1.5rem;
             }
-        }
-    }
-    @include tablette-display {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        h2 {
-            width: 100%;
-        }
-        &__card {
-            width: 49%;
         }
     }
 }
