@@ -8,7 +8,7 @@
     <title>OhMyFood</title>
 </head>
 <body>
-    <div class="loader">
+    <!-- <div class="loader">
         <span class="loader__letter">C</span>
         <span class="loader__letter">H</span>
         <span class="loader__letter">A</span>
@@ -19,7 +19,7 @@
         <span class="loader__letter">E</span>
         <span class="loader__letter">N</span>
         <span class="loader__letter">T</span>
-    </div>
+    </div> -->
 
     <header>
         <img src="img/ohmyfood.png" alt="Logo" class="logo">
@@ -27,7 +27,12 @@
 
 
     <main>
-        <p class="location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+        <form class="location" method="post" action="#">
+            <label for="search-input" class="location__search-label"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="search" name="location__search-input" id="search-input" class="location__search-input" placeholder="Paris, Belleville">
+            <button type="submit" class="location__search-button" disabled>Rechercher</button>
+        </form>
+        <!-- <p class="location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p> -->
 
         <section class="search_restaurant">
             <h1>Réservez le menu qui vous convient</h1>

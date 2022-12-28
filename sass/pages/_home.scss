@@ -93,7 +93,21 @@
     height: 50px;
     font-weight: bold;
     i {
+        margin-left: 10px;
         margin-right: 20px;
+    }
+    &__search-input {
+        border: none;
+        background-color: map-get($background-color, tertiary);
+        &::placeholder {
+            font-weight: bold;
+            color: $text-color-secondary;
+            opacity: 1;
+            font-size: 0.95rem;
+        }
+    }
+    &__search-button {
+        display: none;
     }
 }
 

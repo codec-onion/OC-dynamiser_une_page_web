@@ -85,95 +85,6 @@ header .logo {
   width: 180px;
 }
 
-.menu-header a {
-  position: absolute;
-  top: 23px;
-  left: 20px;
-  font-size: 1.3rem;
-}
-
-.menu-container .menu-img {
-  width: 100%;
-  height: 255px;
-  object-fit: cover;
-  z-index: 0;
-}
-@media screen and (min-width: 992px) {
-  .menu-container .menu-img {
-    height: 400px;
-  }
-}
-.menu-container .menu {
-  padding: 40px 12px;
-  position: relative;
-  top: -50px;
-  border-radius: 50px 50px 0 0;
-  z-index: 1;
-}
-.menu-container .menu h1 {
-  font-family: Shrikhand, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 30px 35px 0;
-  font-size: 1.7rem;
-}
-.menu-container .menu h1 i {
-  align-self: center;
-}
-.menu-container .menu .meal-part {
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 768px) {
-  .menu-container .menu .meal-part {
-    width: 80%;
-    margin: 0 auto 40px;
-  }
-}
-.menu-container .menu .meal-part h2 {
-  text-transform: uppercase;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-.menu-container .menu .meal-part__underline-title {
-  height: 3px;
-  width: 40px;
-  background-color: #99E2D0;
-  margin: 8px 0 12px 0;
-}
-@media screen and (min-width: 992px) {
-  .menu-container .menu .meal-part__underline-title {
-    width: 40%;
-  }
-}
-.menu-container .menu .meal-part__element {
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 2px 2px 10px 3px rgba(211, 211, 211, 0.7333333333);
-}
-@media screen and (min-width: 992px) {
-  .menu-container .menu .meal-part__element {
-    width: 80%;
-    margin: 0 auto 10px;
-  }
-}
-.menu-container .menu .meal-part__element a {
-  display: block;
-  padding: 15px 25px 15px 10px;
-}
-.menu-container .menu .meal-part__element-info {
-  display: flex;
-  justify-content: space-between;
-}
-.menu-container .menu .meal-part__element-price {
-  font-weight: bold;
-}
-.menu-container .menu .meal-part__element h3 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-
 footer {
   background: #353535;
   padding: 25px 20px;
@@ -309,7 +220,21 @@ footer a i {
   font-weight: bold;
 }
 .location i {
+  margin-left: 10px;
   margin-right: 20px;
+}
+.location__search-input {
+  border: none;
+  background-color: #EAEAEA;
+}
+.location__search-input::placeholder {
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+  font-size: 0.95rem;
+}
+.location__search-button {
+  display: none;
 }
 
 .search_restaurant {
@@ -442,6 +367,95 @@ footer a i {
 }
 .restaurants__card-info i {
   font-size: 1.5rem;
+}
+
+.menu-header a {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  font-size: 1.3rem;
+}
+
+.menu-container .menu-img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  z-index: 0;
+}
+@media screen and (min-width: 992px) {
+  .menu-container .menu-img {
+    height: 400px;
+  }
+}
+.menu-container .menu {
+  padding: 40px 12px;
+  position: relative;
+  top: -50px;
+  border-radius: 50px 50px 0 0;
+  z-index: 1;
+}
+.menu-container .menu h1 {
+  font-family: Shrikhand, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 35px 0;
+  font-size: 1.7rem;
+}
+.menu-container .menu h1 i {
+  align-self: center;
+}
+.menu-container .menu .meal-part {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .menu-container .menu .meal-part {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+}
+.menu-container .menu .meal-part h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.menu-container .menu .meal-part__underline-title {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  margin: 8px 0 12px 0;
+}
+@media screen and (min-width: 992px) {
+  .menu-container .menu .meal-part__underline-title {
+    width: 40%;
+  }
+}
+.menu-container .menu .meal-part__element {
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px 3px rgba(211, 211, 211, 0.7333333333);
+}
+@media screen and (min-width: 992px) {
+  .menu-container .menu .meal-part__element {
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+}
+.menu-container .menu .meal-part__element a {
+  display: block;
+  padding: 15px 25px 15px 10px;
+}
+.menu-container .menu .meal-part__element-info {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-container .menu .meal-part__element-price {
+  font-weight: bold;
+}
+.menu-container .menu .meal-part__element h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
