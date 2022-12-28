@@ -1,3 +1,90 @@
+.loader {
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: map-get($map: $background-color, $key: tertiary);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    animation: fade-out 3s forwards;
+    &__letter {
+        color: $primary-color;
+        font-size: 1.4rem;
+        letter-spacing: 10px;
+        animation: flash 1.2s linear infinite;
+        @include tablette-display {
+            font-size: 2rem;
+            letter-spacing: 15px;
+        }
+        @include desktop-display {
+            font-size: 3.7rem;
+        }
+        &:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        &:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        &:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        &:nth-child(5){
+            animation-delay: 0.5s;
+        }
+        &:nth-child(6){
+            animation-delay: 0.6s;
+        }
+        &:nth-child(7){
+            animation-delay: 0.7s;
+        }
+        &:nth-child(8){
+            animation-delay: 0.8s;
+        }
+        &:nth-child(9){
+            animation-delay: 0.9s;
+        }
+        &:nth-child(10){
+            animation-delay: 1s;
+        }
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        z-index: 10;
+    }
+    80% {
+        opacity: 1;
+        z-index: 10;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: -5;
+    }
+}
+@keyframes flash {
+    0% {
+        color: $secondary-color;
+        text-shadow: 0 0 7px $secondary-color;
+    }
+    90% {
+        color: $primary-color;
+        text-shadow: none;
+    }
+    100% {
+        color: $secondary-color;
+        text-shadow: 0 0 7px $secondary-color;
+    }
+}
+
 .location {
     background-color: map-get($background-color, tertiary);
     display: flex;
