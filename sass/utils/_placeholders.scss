@@ -1,3 +1,4 @@
+// Permet de ne pas avoir de blanc en fond en bas du bloc menu à cause du déplacement avec position
 %background-menu {
     background: map-get($map: $background-color, $key: secondary);
 }
