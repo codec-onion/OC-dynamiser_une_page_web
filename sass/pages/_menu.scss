@@ -37,8 +37,20 @@
             margin-bottom: 35px;
             font-size: 1.7rem;
             font-weight: lighter;
-            i {
+            span {
+                position: relative;
                 align-self: center;
+                i {
+                    &:nth-child(2) {
+                        position: relative;
+                        @include heart-like;
+                        font-size: 1.7rem;
+                        right: 27px;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
         .meal-part {

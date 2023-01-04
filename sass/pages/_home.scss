@@ -244,13 +244,9 @@
             }
             &--like {
                 position: absolute;
-                font-size: 1.5rem;
+                @include heart-like;
                 bottom: 26px;
                 right: 10px;
-                cursor: pointer;
-                color: $secondary-color;
-                opacity: 0;
-                transition: opacity 0.3s ease-in-out;
                 &:hover {
                     opacity: 1;
                 }

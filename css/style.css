@@ -376,12 +376,12 @@ footer a i {
 .restaurants__card-info--like {
   position: absolute;
   font-size: 1.5rem;
-  bottom: 26px;
-  right: 10px;
   cursor: pointer;
   color: #FF79DA;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  bottom: 26px;
+  right: 10px;
 }
 .restaurants__card-info--like:hover {
   opacity: 1;
@@ -430,8 +430,22 @@ footer a i {
   font-size: 1.7rem;
   font-weight: lighter;
 }
-.menu-container .menu h1 i {
+.menu-container .menu h1 span {
+  position: relative;
   align-self: center;
+}
+.menu-container .menu h1 span i:nth-child(2) {
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #FF79DA;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 1.7rem;
+  right: 27px;
+}
+.menu-container .menu h1 span i:nth-child(2):hover {
+  opacity: 1;
 }
 .menu-container .menu .meal-part {
   margin-bottom: 40px;
