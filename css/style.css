@@ -497,21 +497,28 @@ footer a i {
   }
 }
 .menu-container .menu .meal-part__element a {
-  display: block;
-  padding: 15px 25px 15px 10px;
-}
-.menu-container .menu .meal-part__element-info {
   display: flex;
   justify-content: space-between;
+  padding: 15px 20px 15px 10px;
 }
-.menu-container .menu .meal-part__element-price {
-  font-weight: bold;
-  margin-left: 5px;
+.menu-container .menu .meal-part__element-info {
+  max-width: 90%;
+  padding-right: 13px;
 }
-.menu-container .menu .meal-part__element h3 {
+.menu-container .menu .meal-part__element-info h3 {
   font-size: 1.1rem;
   margin-bottom: 5px;
   font-weight: 500;
+}
+.menu-container .menu .meal-part__element-info h3, .menu-container .menu .meal-part__element-info p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-container .menu .meal-part__element-price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
 }
 
 @keyframes appearance {
