@@ -247,16 +247,21 @@
             justify-content: space-between;
             align-items: center;
             padding: 17px 10px;
-            i {
-                font-size: 1.5rem;
-            }
+            
             &--like {
                 position: absolute;
-                @include heart-like;
-                bottom: 26px;
-                right: 10px;
-                &:hover {
-                    opacity: 1;
+                right: 25px;
+                bottom: 27px;
+                i {
+                    font-size: 1.7rem;
+                    &:nth-child(2) {
+                        position: absolute;
+                        @include heart-like;
+                        left: 0;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }

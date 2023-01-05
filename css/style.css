@@ -378,20 +378,23 @@ footer a i {
   align-items: center;
   padding: 17px 10px;
 }
-.restaurants__card-info i {
-  font-size: 1.5rem;
-}
 .restaurants__card-info--like {
   position: absolute;
-  font-size: 1.5rem;
+  right: 25px;
+  bottom: 27px;
+}
+.restaurants__card-info--like i {
+  font-size: 1.7rem;
+}
+.restaurants__card-info--like i:nth-child(2) {
+  position: absolute;
   cursor: pointer;
   color: #FF79DA;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  bottom: 26px;
-  right: 10px;
+  left: 0;
 }
-.restaurants__card-info--like:hover {
+.restaurants__card-info--like i:nth-child(2):hover {
   opacity: 1;
 }
 
@@ -432,28 +435,30 @@ footer a i {
 }
 .menu-container .menu h1 {
   font-family: Shrikhand, sans-serif;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 35px;
   font-size: 1.7rem;
   font-weight: lighter;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
 }
 .menu-container .menu h1 span {
   position: relative;
-  align-self: center;
+  margin-right: 5px;
 }
-.menu-container .menu h1 span i:nth-child(2) {
+.menu-container .menu h1 span i {
+  font-size: 1.7rem;
+  margin-top: 5px;
+}
+.menu-container .menu h1 span i:nth-child(1) {
   position: absolute;
-  font-size: 1.5rem;
+  z-index: 5;
   cursor: pointer;
   color: #FF79DA;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  font-size: 1.7rem;
-  right: 0;
-  top: 4px;
 }
-.menu-container .menu h1 span i:nth-child(2):hover {
+.menu-container .menu h1 span i:nth-child(1):hover {
   opacity: 1;
 }
 .menu-container .menu .meal-part {
