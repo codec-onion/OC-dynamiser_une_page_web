@@ -42,10 +42,11 @@
                 align-self: center;
                 i {
                     &:nth-child(2) {
-                        position: relative;
+                        position: absolute;
                         @include heart-like;
                         font-size: 1.7rem;
-                        right: 27px;
+                        right: 0;
+                        top: 4px;
                         &:hover {
                             opacity: 1;
                         }
