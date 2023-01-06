@@ -11,7 +11,10 @@
 
 @mixin heart-like {
     cursor: pointer;
-    color: $secondary-color;
+    background: linear-gradient($primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
