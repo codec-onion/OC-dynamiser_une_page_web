@@ -513,6 +513,21 @@ footer a i {
   display: flex;
   justify-content: space-between;
 }
+.menu-container .menu .meal-part__element a > div:last-child {
+  display: flex;
+  margin-right: -60px;
+  transition: margin-right 0.4s ease-in-out;
+}
+.menu-container .menu .meal-part__element a i {
+  transform: rotate(180deg);
+  transition: transform 0.3s 0.1s ease-in-out;
+}
+.menu-container .menu .meal-part__element a:hover > div:last-child {
+  margin-right: 0;
+}
+.menu-container .menu .meal-part__element a:hover i {
+  transform: rotate(0);
+}
 .menu-container .menu .meal-part__element-info {
   margin: 15px 0 15px 10px;
   padding-right: 13px;
@@ -540,7 +555,6 @@ footer a i {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  transform: translate(58px, 0);
 }
 .menu-container .menu .meal-part__element-validation i {
   color: white;
