@@ -200,6 +200,7 @@ footer a i {
   100% {
     color: #FF79DA;
     text-shadow: 0 0 7px #FF79DA;
+    transform: rotate(360deg);
   }
 }
 .header-index {
